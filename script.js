@@ -5,7 +5,7 @@ function getQuote() {
 
     fetch(quoteUrl, { cache: 'no-store' })
         .then(function(resp) {
-            resturn resp.json();
+            return resp.json();
         })
         .then(createTweet);
 }
